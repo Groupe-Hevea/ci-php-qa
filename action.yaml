@@ -5,4 +5,5 @@ runs:
   image: 'docker://zdenekdrahos/phpqa:v1.23.3'
   args:
     - phpqa
-    - --output file
+    - --output
+    - file
