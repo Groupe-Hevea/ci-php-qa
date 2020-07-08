@@ -1,0 +1,7 @@
+name: 'CI PHP QA'
+description: 'Run phpqa tool on code'
+runs:
+  using: 'docker'
+  image: 'docker://allopneus/ci-php-actions'
+  args:
+    - composer global require edgedesign/phpqa --dev && .composer/vendor/bin/phpqa
