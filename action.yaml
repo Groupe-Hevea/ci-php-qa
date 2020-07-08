@@ -4,4 +4,4 @@ runs:
   using: 'docker'
   image: 'docker://allopneus/ci-php-actions'
   args:
-    - composer global require edgedesign/phpqa --dev && .composer/vendor/bin/phpqa
+    - composer global require edgedesign/phpqa --dev && $HOME/.composer/vendor/bin/phpqa
